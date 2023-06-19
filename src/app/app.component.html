@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="calculator card">
+  
+      <input type="text" class="calculator-screen z-depth-1 rounded-top" value="{{display}}" disabled />
+    
+      <div class="calculator-keys">
+    
+        <button type="button" class="operator btn btn-info" value="+" (click)="simbolPress('+')">+</button>
+        <button type="button" class="operator btn btn-info" value="-" (click)="simbolPress('-')">-</button>
+        <button type="button" class="operator btn btn-info" value="*" (click)="simbolPress('*')">&times;</button>
+        <button type="button" class="operator btn btn-info" value="/" (click)="simbolPress('/')">&divide;</button>
+    
+        <button type="button" value="7" class="btn btn-light " (click)="numPress('7')">7</button>
+        <button type="button" value="8" class="btn btn-light " (click)="numPress('8')">8</button>
+        <button type="button" value="9" class="btn btn-light " (click)="numPress('9')">9</button>
+    
+    
+        <button type="button" value="4" class="btn btn-light " (click)="numPress('4')">4</button>
+        <button type="button" value="5" class="btn btn-light " (click)="numPress('5')">5</button>
+        <button type="button" value="6" class="btn btn-light " (click)="numPress('6')">6</button>
+    
+    
+        <button type="button" value="1" class="btn btn-light " (click)="numPress('1')">1</button>
+        <button type="button" value="2" class="btn btn-light " (click)="numPress('2')">2</button>
+        <button type="button" value="3" class="btn btn-light " (click)="numPress('3')">3</button>
+    
+    
+        <button type="button" value="0" class="btn btn-light" (click)="numPress('0')">0</button>
+        <button type="button" class="decimal function btn btn-secondary" value="." (click)="simbolPress('.')">.</button>
+        <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" (click)="clearAll()">AC</button>
+    
+        <button type="button" class="equal-sign operator btn btn-default" value="=" (click)="getResult()">=</button>
+    
+      </div>
+  </div>
+  </div>
